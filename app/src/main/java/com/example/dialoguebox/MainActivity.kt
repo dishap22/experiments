@@ -26,48 +26,75 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun MainScreen() {
     val context = LocalContext.current
-    var showDialog by remember { mutableStateOf(false) }
+    var showSnackbar by remember { mutableStateOf(false) }
+    val snackbarHostState = remember { SnackbarHostState() }
 
+    // Auto-show snackbar after 3 seconds when screen opens
     LaunchedEffect(Unit) {
         delay(3000)
-        showDialog = true
+        showSnackbar = true
     }
 
-    Column(
-        modifier = Modifier.fillMaxSize(),
-        verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally
-    ) {
-        Text(
-            text = "Learnperk",
-            style = MaterialTheme.typography.bodyLarge.copy(fontSize = 32.sp),
-            modifier = Modifier.padding(16.dp)
-        )
-        Button(onClick = { showDialog = true }) {
-            Text("Show Dialog")
+    LaunchedEffect(showSnackbar) {
+        if (showSnackbar) {
+            try {
+                val result = snackbarHostState.showSnackbar(
+                    message = "\uD83C\uDF55 Pizza Party Special at Crust & Sauce! \n\uD83C\uDF89 Buy 1, Get 1 Free on all Large Pizzas!",
+                    actionLabel = "Visit Page",
+                    duration = SnackbarDuration.Long,
+                    withDismissAction = true
+                )
+
+                when (result) {
+                    SnackbarResult.ActionPerformed -> {
+                        context.startActivity(Intent(context, SecondActivity::class.java))
+                    }
+                    SnackbarResult.Dismissed -> {
+                        // Handle dismiss case if needed
+                    }
+                }
+            } finally {
+                showSnackbar = false
+            }
         }
     }
 
-    if (showDialog) {
-        AlertDialog(
-            onDismissRequest = { showDialog = false },
-            title = { Text("\uD83C\uDF55 Pizza Party Special at Crust & Sauce!")},
-            text = { Text("\uD83C\uDF89 Buy 1, Get 1 Free on all Large Pizzas!")},
-            confirmButton = {
-                Button(
-                    onClick = {
-                        showDialog = false
-                        context.startActivity(Intent(context, SecondActivity::class.java))
+    // Reset showSnackbar when returning from SecondActivity
+    DisposableEffect(Unit) {
+        onDispose {
+            showSnackbar = false
+        }
+    }
+
+    Scaffold(
+        snackbarHost = {
+            SnackbarHost(
+                hostState = snackbarHostState,
+                modifier = Modifier.padding(16.dp)
+            )
+        }
+    ) { innerPadding ->
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(innerPadding),
+            verticalArrangement = Arrangement.Center,
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            Text(
+                text = "Learnperk",
+                style = MaterialTheme.typography.bodyLarge.copy(fontSize = 32.sp),
+                modifier = Modifier.padding(16.dp)
+            )
+            Button(
+                onClick = {
+                    if (!showSnackbar) {
+                        showSnackbar = true
                     }
-                ) {
-                    Text("Visit Page")
                 }
-            },
-            dismissButton = {
-                Button(onClick = { showDialog = false }) {
-                    Text("Close")
-                }
+            ) {
+                Text("Show Snackbar")
             }
-        )
+        }
     }
 }
