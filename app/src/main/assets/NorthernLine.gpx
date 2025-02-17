@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx creator="https://gpx.studio" version="1.1" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd http://www.garmin.com/xmlschemas/PowerExtension/v1 http://www.garmin.com/xmlschemas/PowerExtensionv1.xsd http://www.topografix.com/GPX/gpx_style/0/2 http://www.topografix.com/GPX/gpx_style/0/2/gpx_style.xsd" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxpx="http://www.garmin.com/xmlschemas/PowerExtension/v1" xmlns:gpx_style="http://www.topografix.com/GPX/gpx_style/0/2">
+  <metadata>
+    <name>New file 3</name>
+    <author>
+      <name>gpx.studio</name>
+      <link href="https://gpx.studio"/>
+    </author>
+  </metadata>
+  <wpt lat="51.4795819871851" lon="-0.14293984986321107">
+    <ele>3.3772646724725828</ele>
+    <name>Battersea Power Station Underground Station</name>
+  </wpt>
+  <wpt lat="51.48013304535402" lon="-0.12967572366261493">
+    <ele>6.394206189505242</ele>
+    <name>Nine Elms Underground Station</name>
+  </wpt>
+  <wpt lat="51.48820803667647" lon="-0.10588352719221916">
+    <ele>7.617977945432687</ele>
+    <name>Kennington Underground Station </name>
+  </wpt>
+  <wpt lat="51.503004" lon="-0.113983">
+    <ele>15.906025904494241</ele>
+    <name>Waterloo Underground Station</name>
+  </wpt>
+  <wpt lat="51.507218" lon="-0.122241">
+    <ele>10.385605944879988</ele>
+    <name>Embankment Undergound Station</name>
+  </wpt>
+  <wpt lat="51.507501" lon="-0.123687">
+    <ele>34.294181040090635</ele>
+    <name>Charing Cross Underground Station</name>
+  </wpt>
+  <wpt lat="51.511449873056904" lon="-0.12825989572695562">
+    <ele>30.20529098854197</ele>
+    <name>Leicester Square Underground Station</name>
+  </wpt>
+  <wpt lat="51.515956" lon="-0.13052">
+    <ele>37.01183532346113</ele>
+    <name>Tottenham Court Road Underground Station</name>
+  </wpt>
+  <wpt lat="51.52061" lon="-0.134322">
+    <ele>35.742772913475754</ele>
+    <name>Goodge Street Underground Station</name>
+  </wpt>
+  <wpt lat="51.524801" lon="-0.138523">
+    <ele>35.70472120090933</ele>
+    <name>Warren Street Underground Station</name>
+  </wpt>
+  <wpt lat="51.528291" lon="-0.133841">
+    <ele>27.76244773818275</ele>
+    <name>Euston Underground Station</name>
+  </wpt>
+  <wpt lat="51.534045" lon="-0.13815">
+    <ele>30.56508201318839</ele>
+    <name>Mornington Crescent Underground Station</name>
+  </wpt>
+  <wpt lat="51.539433" lon="-0.142714">
+    <ele>31.82988831419618</ele>
+    <name>Camden Town Underground Station</name>
+  </wpt>
+  <wpt lat="51.544125" lon="-0.153521">
+    <ele>34.89478698668561</ele>
+    <name>Chalk Farm Underground Station</name>
+  </wpt>
+  <wpt lat="51.55029202163655" lon="-0.16461721513690009">
+    <ele>73.6470489141071</ele>
+    <name>Belsize Park Underground Station</name>
+  </wpt>
+  <wpt lat="51.556590509533805" lon="-0.17842639853645892">
+    <ele>114.97613661892538</ele>
+    <name>Hampstead Underground Station</name>
+  </wpt>
+  <wpt lat="51.57229434949494" lon="-0.1940298697855667">
+    <ele>74.91263531490793</ele>
+    <name>Golders Green Underground Station</name>
+  </wpt>
+  <wpt lat="51.576780183674856" lon="-0.21397252941704892">
+    <ele>53.08791132445945</ele>
+    <name>Brent Cross Underground Station</name>
+  </wpt>
+  <wpt lat="51.58337581329306" lon="-0.22654891173232272">
+    <ele>68.47056797835987</ele>
+    <name>Hendon Central Underground Station</name>
+  </wpt>
+  <wpt lat="51.595421" lon="-0.249937">
+    <ele>51.640984368953646</ele>
+    <name>Colindale Underground Station</name>
+  </wpt>
+  <wpt lat="51.602811" lon="-0.264016">
+    <ele>49.39813063112233</ele>
+    <name>Burnt Oak Underground Station</name>
+  </wpt>
+  <wpt lat="51.61365206766391" lon="-0.274958052425859">
+    <ele>58.081863774802414</ele>
+    <name>Edgware Underground Station</name>
+  </wpt>
+  <trk>
+    <name>New file 3</name>
+  </trk>
+</gpx>
